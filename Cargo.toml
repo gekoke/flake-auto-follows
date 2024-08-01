@@ -1,0 +1,21 @@
+[package]
+name = "flake-auto-follows"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "faf"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.5.4", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+color-eyre = "0.6"
+owo-colors = "4.0.0"
+toml = "0.8.13"
+rnix = "0.11.0"
+dialoguer = "0.11.0"
+url = { version = "2", features = ["serde"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"

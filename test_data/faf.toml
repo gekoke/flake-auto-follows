@@ -1,0 +1,6 @@
+rules = [
+  { input = "nixpkgs", follows = "nixpkgs", exclude = [ "emacs-overlay" ] },
+  { input = "nixpkgs-stable", follows = "nixpkgs-stable" },
+  { input = "home-manager", follows = "home-manager" },
+]
+
